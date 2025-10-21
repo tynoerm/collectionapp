@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 
 // ✅ MongoDB connection
 mongoose
-  .connect('mongodb://localhost:27017/collectionapp', {
+  .connect('mongodb+srv://tinomutendaishemutemaringa:Tinomutenda123#@cluster0.1cmpp1i.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -46,3 +46,4 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`🚀 Server running on http://0.0.0.0:${PORT}`);
 });
+
